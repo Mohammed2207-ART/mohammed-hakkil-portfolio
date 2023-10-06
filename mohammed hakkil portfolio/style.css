@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+   color: black;
+
+}
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo{
+  position: relative;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  font-weight: 350;
+
+}
+
+.nav a{
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+
+.nav a:hover,
+.nav a.active{
+  color: #00abf0;
+}
+
+
+
+#home{
+  text-align: center;
+  height: 100vh;
+  background: white;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+ 
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  border: 3px solid black; 
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.home-content h1{
+  font-size: 50px;
+  font-weight: 600;
+
+}
+
+
+.home-content h3{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+#about{
+  text-align: center;
+  height: 200vh;
+  background: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
+align-items: center;
+padding: 0% 10%;
+}
+.about-content h1{
+  font-size: 50px;
+  font-weight: 500;
+
+}
+.about-content p{
+  font-size: 20px;
+  line-height: 2;
+}
+#contact{
+  text-align: center;
+  height: 100vh;
+  background:white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+padding: 0% 10%;
+}
+
+
+.icons a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+.icons a:hover{
+  color: white;
+}
+.icons a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  transition: .5s;
+
+}
+.icons a:hover:before{
+  width: 100%;
+
+
+}
+
+.connect-us{
+  height: 20vh;
+  padding: 0% 10%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.connect-us a{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.connect-us a:hover{
+  color: black;
+}
